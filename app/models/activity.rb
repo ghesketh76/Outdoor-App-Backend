@@ -1,4 +1,4 @@
 class Activity < ApplicationRecord
-    has_many :ratingjoiners
-    has_many :users, through: :ratingjoiners
+    has_many :ratings
+    has_many :users, through: :ratings
 end

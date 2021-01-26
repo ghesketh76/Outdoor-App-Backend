@@ -1,4 +1,4 @@
-RatingJoiner.destroy_all
+Rating.destroy_all
 User.destroy_all
 Activity.destroy_all
 
@@ -28,6 +28,6 @@ log_rolling = Activity.create(
     picture: "https://www.travelwisconsin.com/uploads/blog/55/55eb4cff-ab08-49eb-ac7c-347548dfec59-logrolling.jpg"
 )
 
-RatingJoiner.create(rating: "Lame", user: damon, activity: hike)
-RatingJoiner.create(rating: "Sick", user: alexander, activity: log_rolling)
-RatingJoiner.create(rating: "Sick", user: grant, activity: ski)
+Rating.create(rating: "Lame", user: damon, activity: hike)
+Rating.create(rating: "Sick", user: alexander, activity: log_rolling)
+Rating.create(rating: "Sick", user: grant, activity: ski)
