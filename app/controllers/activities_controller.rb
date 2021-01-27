@@ -1,7 +1,11 @@
 class ActivitiesController < ApplicationController
 
     def index 
-        @activities = Activity.all 
+        if params[:search]
+            @activities = Activity.where('name LIKE ?', "%#{params[:search]}%")
+        else
+            @activities = Activity.all 
+        end
         render json: @activities, include: [:users, :ratings]
     end
 
