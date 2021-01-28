@@ -6,12 +6,12 @@ class ActivitiesController < ApplicationController
         else
             @activities = Activity.all 
         end
-        render json: @activities, include: [:users, :ratings]
+        render json: @activities, include: [:ratings]
     end
 
     def show 
         @activity = Activity.find(params[:id])
-        render json: @activity, include: [:users, :ratings]
+        render json: @activity, include: [:ratings]
     end
 
     def create 

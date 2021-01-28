@@ -1,11 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  rating: MyString
-  user: one
+  rating: 1
   activity: one
 
 two:
-  rating: MyString
-  user: two
+  rating: 1
   activity: two

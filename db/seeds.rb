@@ -1,11 +1,8 @@
 Rating.destroy_all
-User.destroy_all
 Activity.destroy_all
 
 
-alexander = User.create(name: "Alexander", age: 27, location: "Arvada, CO")
-grant = User.create(name: "Grant", age: 30, location: "Lakewood, CO")
-damon = User.create(name: "Damon", age: 28, location: "Denver, CO")
+
 
 hike = Activity.create(
     name: "Hiking", 
@@ -28,6 +25,6 @@ log_rolling = Activity.create(
     picture: "https://www.travelwisconsin.com/uploads/blog/55/55eb4cff-ab08-49eb-ac7c-347548dfec59-logrolling.jpg"
 )
 
-Rating.create(rating: "Lame", user: damon, activity: hike)
-Rating.create(rating: "Sick", user: alexander, activity: log_rolling)
-Rating.create(rating: "Sick", user: grant, activity: ski)
+Rating.create(rating: 2, activity: hike)
+Rating.create(rating: 5, activity: ski)
+Rating.create(rating: 4, activity: log_rolling)
