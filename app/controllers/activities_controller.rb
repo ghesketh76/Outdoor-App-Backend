@@ -27,4 +27,11 @@ class ActivitiesController < ApplicationController
         @activity = Activity.find(params[:id])
         @activity.destroy
     end
+    
+    def trending_activities 
+        @activities = Activity.all.select do |activity|
+            activity.ratings.length >= 3
+        end
+        render json: @activities
+    end
 end
