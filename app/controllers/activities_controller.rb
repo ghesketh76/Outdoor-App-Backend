@@ -32,6 +32,6 @@ class ActivitiesController < ApplicationController
         @activities = Activity.all.select do |activity|
             activity.ratings.length >= 3
         end
-        render json: @activities
+        render json: @activities, include: [:ratings]
     end
 end
