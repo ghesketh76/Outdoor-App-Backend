@@ -4,6 +4,10 @@
 
 This is a backend API for the Outdoor Activty Rating webpage. It is built with Ruby on Rails and utilizes a SQL database. It has the capability to run RESTful actions on its controllers for Activities and Ratings for those activites.
 
+## Frontend
+
+https://github.com/MomentaiBro/Outdoor_Frontend
+
 
 ## Technologies
 * Ruby - 2.6.1
