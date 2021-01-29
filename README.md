@@ -33,6 +33,6 @@ Note: Ensure the rails server is running on localhost:3000
 
 ## Contact
 
-Created by [Grant Hesketh](https://www.linkedin.com/in/granthesketh/) and [Alexander Sherwin](URL)
+Created by [Grant Hesketh](https://www.linkedin.com/in/granthesketh/) and [Alexander Sherwin](alx.sherwin@gmail.com)
 
 Feel free to contact us!
