@@ -12,5 +12,6 @@ class RatingsController < ApplicationController
 
     def create 
         Rating.create(rating: params[:rating], activity_id: params[:activity_id])
+        redirect_to "http://localhost:3001/index.html"
     end
 end

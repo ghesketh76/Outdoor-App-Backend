@@ -21,6 +21,7 @@ class ActivitiesController < ApplicationController
             equipment: params[:equipment],
             picture: params[:picture]
         )
+        redirect_to "http://localhost:3001/index.html"
     end
 
     def destroy 

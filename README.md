@@ -1,24 +1,38 @@
-# README
+# Outdoor Activty Rater Backend API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## General Info
 
-Things you may want to cover:
+This is a backend API for the Outdoor Activty Rating webpage. It is built with Ruby on Rails and utilizes a SQL database. It has the capability to run RESTful actions on its controllers for Activities and Ratings for those activites.
 
-* Ruby version
 
-* System dependencies
+## Technologies
+* Ruby - 2.6.1
+* Rails - 6.0.3
+* Puma - 4.1
+* SQLite3 - 1.4
 
-* Configuration
+## Setup
 
-* Database creation
+To get started, clone the repository from github to your computer.
 
-* Database initialization
+Then, CD into the repo directory and type the following commands into your terminal:
 
-* How to run the test suite
+```
+$ bundle install
+$ rails db:migrate
+$ rails db:seed
+$ rails s
 
-* Services (job queues, cache servers, search engines, etc.)
+```
 
-* Deployment instructions
+Note: Ensure the rails server is running on localhost:3000
 
-* ...
+## Features
+* REST Controllers for activities and ratings
+* Custom controller and route for trending activities
+
+## Contact
+
+Created by [Grant Hesketh](https://www.linkedin.com/in/granthesketh/) and [Alexander Sherwin](URL)
+
+Feel free to contact us!
